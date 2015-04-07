@@ -13,6 +13,9 @@
 		002D978E1AD390C70054C4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002D978C1AD390C70054C4A4 /* Main.storyboard */; };
 		002D97901AD390C70054C4A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002D978F1AD390C70054C4A4 /* Images.xcassets */; };
 		002D97931AD390C70054C4A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002D97911AD390C70054C4A4 /* LaunchScreen.xib */; };
+		002D97AA1AD392530054C4A4 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 002D97A91AD392530054C4A4 /* AudioFile.m */; };
+		002D97AF1AD399BA0054C4A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002D97AE1AD399BA0054C4A4 /* AudioToolbox.framework */; };
+		002D97B51AD39D7D0054C4A4 /* Liekkas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 002D97B41AD39D7D0054C4A4 /* Liekkas.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		002D978D1AD390C70054C4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		002D978F1AD390C70054C4A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		002D97921AD390C70054C4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		002D97A81AD392530054C4A4 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
+		002D97A91AD392530054C4A4 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
+		002D97AE1AD399BA0054C4A4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		002D97B41AD39D7D0054C4A4 /* Liekkas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Liekkas.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002D97AF1AD399BA0054C4A4 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +50,9 @@
 		002D97761AD390C70054C4A4 = {
 			isa = PBXGroup;
 			children = (
+				002D97B11AD39D7D0054C4A4 /* Sample */,
 				002D97811AD390C70054C4A4 /* AudioMatch */,
+				002D97B01AD39D670054C4A4 /* Frameworks */,
 				002D97801AD390C70054C4A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,12 +70,14 @@
 			children = (
 				002D97861AD390C70054C4A4 /* AppDelegate.h */,
 				002D97871AD390C70054C4A4 /* AppDelegate.m */,
-				002D97891AD390C70054C4A4 /* ViewController.h */,
-				002D978A1AD390C70054C4A4 /* ViewController.m */,
-				002D978C1AD390C70054C4A4 /* Main.storyboard */,
+				002D97A81AD392530054C4A4 /* AudioFile.h */,
+				002D97A91AD392530054C4A4 /* AudioFile.m */,
 				002D978F1AD390C70054C4A4 /* Images.xcassets */,
 				002D97911AD390C70054C4A4 /* LaunchScreen.xib */,
+				002D978C1AD390C70054C4A4 /* Main.storyboard */,
 				002D97821AD390C70054C4A4 /* Supporting Files */,
+				002D97891AD390C70054C4A4 /* ViewController.h */,
+				002D978A1AD390C70054C4A4 /* ViewController.m */,
 			);
 			path = AudioMatch;
 			sourceTree = "<group>";
@@ -77,6 +89,39 @@
 				002D97841AD390C70054C4A4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		002D97B01AD39D670054C4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002D97AE1AD399BA0054C4A4 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		002D97B11AD39D7D0054C4A4 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				002D97B21AD39D7D0054C4A4 /* mp3 */,
+				002D97B31AD39D7D0054C4A4 /* wav */,
+			);
+			name = Sample;
+			path = ../Sample;
+			sourceTree = "<group>";
+		};
+		002D97B21AD39D7D0054C4A4 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
+		002D97B31AD39D7D0054C4A4 /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				002D97B41AD39D7D0054C4A4 /* Liekkas.wav */,
+			);
+			path = wav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +184,7 @@
 				002D978E1AD390C70054C4A4 /* Main.storyboard in Resources */,
 				002D97931AD390C70054C4A4 /* LaunchScreen.xib in Resources */,
 				002D97901AD390C70054C4A4 /* Images.xcassets in Resources */,
+				002D97B51AD39D7D0054C4A4 /* Liekkas.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002D97AA1AD392530054C4A4 /* AudioFile.m in Sources */,
 				002D978B1AD390C70054C4A4 /* ViewController.m in Sources */,
 				002D97881AD390C70054C4A4 /* AppDelegate.m in Sources */,
 				002D97851AD390C70054C4A4 /* main.m in Sources */,
@@ -211,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -246,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AudioFile.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Liekkas" ofType:@"wav"];
+
     return YES;
 }
 

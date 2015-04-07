@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FD7667E0-68F1-4B8A-B4A1-6E0E9144E3BD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AudioMatch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F7AB44FE59FFE34F736EB3F75DCDC60B78B66046</key>
+		<string>github.com:seanxiaoxiao/AudioMatch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AudioMatch/AudioMatch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F7AB44FE59FFE34F736EB3F75DCDC60B78B66046</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:seanxiaoxiao/AudioMatch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F7AB44FE59FFE34F736EB3F75DCDC60B78B66046</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F7AB44FE59FFE34F736EB3F75DCDC60B78B66046</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AudioMatch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
