@@ -13,18 +13,7 @@
 		002D978E1AD390C70054C4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002D978C1AD390C70054C4A4 /* Main.storyboard */; };
 		002D97901AD390C70054C4A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002D978F1AD390C70054C4A4 /* Images.xcassets */; };
 		002D97931AD390C70054C4A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002D97911AD390C70054C4A4 /* LaunchScreen.xib */; };
-		002D979F1AD390C70054C4A4 /* AudioMatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002D979E1AD390C70054C4A4 /* AudioMatchTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		002D97991AD390C70054C4A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 002D97771AD390C70054C4A4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 002D977E1AD390C70054C4A4;
-			remoteInfo = AudioMatch;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		002D977F1AD390C70054C4A4 /* AudioMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +26,10 @@
 		002D978D1AD390C70054C4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		002D978F1AD390C70054C4A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		002D97921AD390C70054C4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		002D97981AD390C70054C4A4 /* AudioMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		002D979D1AD390C70054C4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		002D979E1AD390C70054C4A4 /* AudioMatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioMatchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		002D977C1AD390C70054C4A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		002D97951AD390C70054C4A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				002D97811AD390C70054C4A4 /* AudioMatch */,
-				002D979B1AD390C70054C4A4 /* AudioMatchTests */,
 				002D97801AD390C70054C4A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				002D977F1AD390C70054C4A4 /* AudioMatch.app */,
-				002D97981AD390C70054C4A4 /* AudioMatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,23 +79,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		002D979B1AD390C70054C4A4 /* AudioMatchTests */ = {
-			isa = PBXGroup;
-			children = (
-				002D979E1AD390C70054C4A4 /* AudioMatchTests.m */,
-				002D979C1AD390C70054C4A4 /* Supporting Files */,
-			);
-			path = AudioMatchTests;
-			sourceTree = "<group>";
-		};
-		002D979C1AD390C70054C4A4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				002D979D1AD390C70054C4A4 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,24 +99,6 @@
 			productReference = 002D977F1AD390C70054C4A4 /* AudioMatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		002D97971AD390C70054C4A4 /* AudioMatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 002D97A51AD390C70054C4A4 /* Build configuration list for PBXNativeTarget "AudioMatchTests" */;
-			buildPhases = (
-				002D97941AD390C70054C4A4 /* Sources */,
-				002D97951AD390C70054C4A4 /* Frameworks */,
-				002D97961AD390C70054C4A4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				002D979A1AD390C70054C4A4 /* PBXTargetDependency */,
-			);
-			name = AudioMatchTests;
-			productName = AudioMatchTests;
-			productReference = 002D97981AD390C70054C4A4 /* AudioMatchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +110,6 @@
 				TargetAttributes = {
 					002D977E1AD390C70054C4A4 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					002D97971AD390C70054C4A4 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 002D977E1AD390C70054C4A4;
 					};
 				};
 			};
@@ -189,7 +127,6 @@
 			projectRoot = "";
 			targets = (
 				002D977E1AD390C70054C4A4 /* AudioMatch */,
-				002D97971AD390C70054C4A4 /* AudioMatchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,13 +139,6 @@
 				002D978E1AD390C70054C4A4 /* Main.storyboard in Resources */,
 				002D97931AD390C70054C4A4 /* LaunchScreen.xib in Resources */,
 				002D97901AD390C70054C4A4 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		002D97961AD390C70054C4A4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		002D97941AD390C70054C4A4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				002D979F1AD390C70054C4A4 /* AudioMatchTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		002D979A1AD390C70054C4A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 002D977E1AD390C70054C4A4 /* AudioMatch */;
-			targetProxy = 002D97991AD390C70054C4A4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		002D978C1AD390C70054C4A4 /* Main.storyboard */ = {
@@ -359,40 +273,6 @@
 			};
 			name = Release;
 		};
-		002D97A61AD390C70054C4A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AudioMatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioMatch.app/AudioMatch";
-			};
-			name = Debug;
-		};
-		002D97A71AD390C70054C4A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AudioMatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioMatch.app/AudioMatch";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +290,6 @@
 			buildConfigurations = (
 				002D97A31AD390C70054C4A4 /* Debug */,
 				002D97A41AD390C70054C4A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		002D97A51AD390C70054C4A4 /* Build configuration list for PBXNativeTarget "AudioMatchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				002D97A61AD390C70054C4A4 /* Debug */,
-				002D97A71AD390C70054C4A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
